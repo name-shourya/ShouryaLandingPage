@@ -150,15 +150,45 @@ export default function Home() {
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Specific technical consulting deliverables and automated solutions tailored for your business needs.</p>
                 </div>
                 
-                <div className="flex flex-col gap-8 max-w-5xl mx-auto">
-                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-blue-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300">
-                        <h3 className="text-2xl font-bold mb-4">Automated Overdue Account Extraction</h3>
-                        <p className="text-lg text-muted-foreground">Automated daily extraction of customer account data via Metabase API queries, processed and routed into multi-sheet Excel workbooks for finance teams.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-blue-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                        <h3 className="text-xl md:text-2xl font-bold mb-4">Automated Overdue Account Extraction</h3>
+                        <p className="text-base md:text-lg text-muted-foreground flex-grow mb-6">Automated daily extraction of customer account data via Metabase API queries, processed and routed into multi-sheet Excel workbooks for finance teams.</p>
+                        <div className="flex flex-wrap gap-2 mt-auto">
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">Metabase API</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">Python</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">Excel</span>
+                        </div>
                     </div>
                     
-                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-indigo-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300">
-                        <h3 className="text-2xl font-bold mb-4">Quantitative Volatility Modeling</h3>
-                        <p className="text-lg text-muted-foreground">GJR-GARCH modeling and Sharpe Ratio optimization pipelines deployed via interactive Streamlit web applications.</p>
+                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-indigo-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                        <h3 className="text-xl md:text-2xl font-bold mb-4">Quantitative Volatility Modeling</h3>
+                        <p className="text-base md:text-lg text-muted-foreground flex-grow mb-6">GJR-GARCH modeling and Sharpe Ratio optimization pipelines deployed via interactive Streamlit web applications.</p>
+                        <div className="flex flex-wrap gap-2 mt-auto">
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-500">Python</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-500">Pandas</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-500">Streamlit</span>
+                        </div>
+                    </div>
+
+                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-purple-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                        <h3 className="text-xl md:text-2xl font-bold mb-4">Automated Database Synchronization</h3>
+                        <p className="text-base md:text-lg text-muted-foreground flex-grow mb-6">Real-time data replication and synchronization across disparate SQL and NoSQL databases, ensuring data integrity and zero downtime.</p>
+                        <div className="flex flex-wrap gap-2 mt-auto">
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-500">SQL</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-500">n8n</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-500">REST APIs</span>
+                        </div>
+                    </div>
+                    
+                    <div className="bg-card/80 backdrop-blur-sm border border-border border-l-4 border-l-emerald-500 rounded-r-2xl p-8 md:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                        <h3 className="text-xl md:text-2xl font-bold mb-4">Financial Web Tools</h3>
+                        <p className="text-base md:text-lg text-muted-foreground flex-grow mb-6">Custom-built internal web applications for finance teams to analyze cash flow, forecast revenue, and manage operational expenditures interactively.</p>
+                        <div className="flex flex-wrap gap-2 mt-auto">
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-emerald-500">Next.js</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-emerald-500">React</span>
+                            <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-emerald-500">Tailwind</span>
+                        </div>
                     </div>
                 </div>
             </div>
