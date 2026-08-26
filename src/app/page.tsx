@@ -15,7 +15,7 @@ export default function Home() {
       <div className="fixed inset-0 z-0 opacity-50">
         <WavyRippleBackground />
       </div>
-      <SmokeyCursor />
+      <SmokeyCursor densityDissipation={5} velocityDissipation={0.16} splatRadius={0.16} splatForce={2900} />
       
       {/* Navigation */}
       <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-all duration-300">
