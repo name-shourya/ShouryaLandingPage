@@ -6,6 +6,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/lightswin
 import WavyRippleBackground from "@/components/lightswind/wavy-ripple-background";
 import { TypingText } from "@/components/lightswind/typing-text";
 import { Textarea } from "@/components/lightswind/textarea";
+import { ShineButton } from "@/components/lightswind/shine-button";
+import SmokeyCursor from "@/components/lightswind/smokey-cursor";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
       <div className="fixed inset-0 z-0 opacity-50">
         <WavyRippleBackground />
       </div>
+      <SmokeyCursor />
       
       {/* Navigation */}
       <nav className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border transition-all duration-300">
@@ -69,9 +72,9 @@ export default function Home() {
                         I build automated ETL pipelines that extract your siloed operational data into live, interactive dashboards. Zero manual spreadsheet updates required.
                     </p>
                     
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="#contact" className="inline-flex items-center justify-center px-8 py-4 rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-lg transition-all duration-200 transform hover:-translate-y-1 font-semibold text-base">
-                            Request Free Proof of Concept
+                    <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a href="#contact">
+                            <ShineButton label="Request Free Proof of Concept" size="lg" />
                         </a>
                         <a href="#architecture" className="inline-flex items-center justify-center px-8 py-4 border border-border text-base font-semibold rounded-lg hover:bg-accent transition-all duration-200">
                             View Technical Architecture
@@ -188,9 +191,7 @@ export default function Home() {
                         <Textarea id="task" name="task" rows={4} placeholder="Describe your current manual process..." required />
                     </div>
                     
-                    <button type="submit" className="w-full flex justify-center py-4 px-4 rounded-lg shadow-sm text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 transition-colors">
-                        Request Free Proof of Concept
-                    </button>
+                    <ShineButton label="Request Free Proof of Concept" className="w-full" size="lg" />
                 </form>
             </div>
         </section>
