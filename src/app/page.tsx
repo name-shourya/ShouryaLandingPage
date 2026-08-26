@@ -39,9 +39,23 @@ export default function Home() {
         <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center min-h-screen">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
                 <div className="max-w-4xl mx-auto">
-                    <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium mb-8">
-                        <span className="flex h-2 w-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
-                        Modern Data Architecture
+                    <div className="flex flex-wrap justify-center gap-3 mb-8">
+                        <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium">
+                            <span className="flex h-2 w-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
+                            ETL Automation
+                        </div>
+                        <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium">
+                            Python Data Pipelines
+                        </div>
+                        <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium">
+                            Metabase Analytics
+                        </div>
+                        <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium">
+                            Streamlit Dashboards
+                        </div>
+                        <div className="inline-flex items-center px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-medium">
+                            n8n Workflows
+                        </div>
                     </div>
                     
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
