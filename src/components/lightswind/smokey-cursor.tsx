@@ -1403,7 +1403,9 @@ export default function SmokeyCursor({
     }
 
     function generateColor(): ColorRGB {
-      const c = HSVtoRGB(Math.random(), 1.0, 1.0);
+      // Constrain hue to the 0.45 - 0.85 range (cyans, blues, and purples)
+      const hue = 0.45 + Math.random() * 0.4;
+      const c = HSVtoRGB(hue, 1.0, 1.0);
       c.r *= 0.15;
       c.g *= 0.15;
       c.b *= 0.15;
