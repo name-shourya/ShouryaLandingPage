@@ -188,8 +188,8 @@ export default function Home() {
               <p className="text-muted-foreground text-sm">
                   &copy; 2026 Data.Ops Consulting. All rights reserved.
               </p>
-              <a href="mailto:hello@data.ops" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
-                  hello@data.ops
+              <a href="mailto:getsamified@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
+                  getsamified@gmail.com
               </a>
           </div>
       </footer>
