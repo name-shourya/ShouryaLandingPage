@@ -2,7 +2,6 @@
 
 import { ToggleTheme } from "@/components/lightswind/toggle-theme";
 import { Input } from "@/components/lightswind/input";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/lightswind/tabs";
 import WavyRippleBackground from "@/components/lightswind/wavy-ripple-background";
 import { TypingText } from "@/components/lightswind/typing-text";
 import { Textarea } from "@/components/lightswind/textarea";
@@ -92,52 +91,47 @@ export default function Home() {
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Scalable data infrastructure designed for reliability, performance, and real-time insights.</p>
                 </div>
                 
-                <div className="max-w-4xl mx-auto">
-                  <Tabs defaultValue="extract" className="w-full">
-                    <TabsList className="grid w-full grid-cols-3 mb-8">
-                      <TabsTrigger value="extract">Data Extraction</TabsTrigger>
-                      <TabsTrigger value="transform">Automated Transformation</TabsTrigger>
-                      <TabsTrigger value="load">Live Visualization</TabsTrigger>
-                    </TabsList>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg flex flex-col h-full relative">
+                        <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shadow-lg">1</div>
+                        <h3 className="text-xl font-bold mb-4">Data Extraction</h3>
+                        <p className="text-sm md:text-base text-muted-foreground flex-grow mb-6">Connecting securely to APIs, MySQL databases, and cloud platforms.</p>
+                        <div className="border-t border-border pt-4 mt-auto">
+                            <p className="text-xs font-semibold mb-2 uppercase tracking-wider text-muted-foreground">Tools & Technologies</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">SQL</span>
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <TabsContent value="extract" className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg">
-                      <h3 className="text-2xl font-bold mb-4">Data Extraction</h3>
-                      <p className="text-lg text-muted-foreground mb-6">Connecting securely to APIs, MySQL databases, and cloud platforms.</p>
-                      <div className="border-t border-border pt-4">
-                          <p className="text-sm font-semibold mb-2">Tools & Technologies</p>
-                          <div className="flex flex-wrap gap-2">
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">SQL</span>
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-blue-500">REST APIs</span>
-                          </div>
-                      </div>
-                    </TabsContent>
+                    <div className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg flex flex-col h-full relative">
+                        <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-indigo-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shadow-lg">2</div>
+                        <h3 className="text-xl font-bold mb-4">Automated Transformation</h3>
+                        <p className="text-sm md:text-base text-muted-foreground flex-grow mb-6">Independent scripting and algorithmic cleaning of raw data into structured models.</p>
+                        <div className="border-t border-border pt-4 mt-auto">
+                            <p className="text-xs font-semibold mb-2 uppercase tracking-wider text-muted-foreground">Tools & Technologies</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">Python</span>
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">Pandas</span>
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">n8n</span>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <TabsContent value="transform" className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg">
-                      <h3 className="text-2xl font-bold mb-4">Automated Transformation</h3>
-                      <p className="text-lg text-muted-foreground mb-6">Independent scripting and algorithmic cleaning of raw data into structured models.</p>
-                      <div className="border-t border-border pt-4">
-                          <p className="text-sm font-semibold mb-2">Tools & Technologies</p>
-                          <div className="flex flex-wrap gap-2">
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">Python</span>
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">Pandas</span>
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-indigo-400">n8n</span>
-                          </div>
-                      </div>
-                    </TabsContent>
-                    
-                    <TabsContent value="load" className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg">
-                      <h3 className="text-2xl font-bold mb-4">Live Visualization</h3>
-                      <p className="text-lg text-muted-foreground mb-6">Deploying automated reporting architectures for operational and financial metrics.</p>
-                      <div className="border-t border-border pt-4">
-                          <p className="text-sm font-semibold mb-2">Tools & Technologies</p>
-                          <div className="flex flex-wrap gap-2">
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Metabase</span>
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Streamlit</span>
-                              <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Google Sheets integrations</span>
-                          </div>
-                      </div>
-                    </TabsContent>
-                  </Tabs>
+                    <div className="bg-card/50 backdrop-blur-md border border-border p-8 rounded-2xl shadow-lg flex flex-col h-full relative">
+                        <div className="absolute top-0 right-0 -mt-4 -mr-4 bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold shadow-lg">3</div>
+                        <h3 className="text-xl font-bold mb-4">Live Visualization</h3>
+                        <p className="text-sm md:text-base text-muted-foreground flex-grow mb-6">Deploying automated reporting architectures for operational and financial metrics.</p>
+                        <div className="border-t border-border pt-4 mt-auto">
+                            <p className="text-xs font-semibold mb-2 uppercase tracking-wider text-muted-foreground">Tools & Technologies</p>
+                            <div className="flex flex-wrap gap-2">
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Metabase</span>
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Streamlit</span>
+                                <span className="px-2 py-1 text-xs font-medium bg-muted border border-border rounded-md text-purple-400">Google Sheets integrations</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
